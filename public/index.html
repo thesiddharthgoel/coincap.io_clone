@@ -1,43 +1,1410 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="url icon" href="images/icon.ico" />
+    <link rel="icon 2" href="images/icon2.png" />
+    <link rel="icon 3" sizes="57x57" href="images/icon3.png" />
+    <link rel="icon 4" sizes="72x72" href="images/icon4.png" />
+    <link rel="icon 5" sizes="76x76" href="images/icon5.png" />
+    <link rel="icon 6" sizes="114x114" href="images/icon6.png" />
+    <link rel="icon 7" sizes="120x120" href="images/icon7.png" />
+    <link rel="icon 8" sizes="144x144" href="images/icon8.png" />
+    <link rel="icon 9" sizes="152x152" href="images/icon9.png" />
+    <link rel="icon 10" sizes="180x180" href="images/icon10.png" />
+    
+    <style data-styled="active" data-styled-version="5.3.0"></style>
+    <meta name="viewport" content="width=device-width" />
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <title>
+      CoinCap.io_Clone
+    </title>
+</head>
+<body>
+ <div>
+    <div id="__next">
+      
+      <main class="Layout__Main-sc-1dkuvhb-0 dLkqAJ light">
+        
+        <div class="ui segment">
+          <div>
+          <div
+            style="z-index: 9999"
+            class="ui borderless fluid top fixed ss-header mobile-only menu"
+          >
+          
+          
+            <div
+              class="ui container Header__StyledContainer-sc-5yx5v0-0 dBsPEQ"
+            >
+          </div>
+            
+          
+              <div class="item">
+                <div style="position: relative">
+                  <div
+                    class="ui large icon input SearchInput__StyledInput-sc-1kdg18s-1 KlQHb"
+                  >
+                
+                    <input type="text" id="search-input-mobile" /><i
+                      aria-hidden="true"
+                      class="search icon"
+                    ></i>
+                  
+                  </div>
+                </div>
+              <a class="header link item"
+                ><img src="images/black.png" class="ui tiny image"
+              /></a>
+              <div class="item">
+                <i aria-hidden="true" class="bars large icon"></i>
+              </div>
+            
+            </div>
+            <div
+              style="width: 200px"
+              class="ui vertical labeled icon ui overlay left sidebar menu"
+            >
+          
+          
+        </div>
+          
+              <a href="/"
+                ><div class="active item">
+                  <i aria-hidden="true" class="bitcoin icon"></i>Coins
+                </div></a
+              ><a href="/exchanges"
+                ><div class="item">
+                  <i aria-hidden="true" class="exchange icon"></i
+                  >Exchanges
+                </div></a
+              ><a href="/swap"
+                ><div class="item">
+                  <i aria-hidden="true" class="random icon"></i>Swap
+                </div></a
+              ><a target="_blank" class="link item"
+                ><i aria-hidden="true" class="newspaper outline icon"></i
+                >API
+              </a>
+              <div class="item">
+                <i aria-hidden="true" class="setting link icon"></i
+                >Settings
+              </div>
+              <a class="item"
+                ><button
+                  class="ui button circular primary button cta-button"
+                  style="margin: 0px auto"
+                >
+                  Connect Wallet
+                </button></a
+              >
+            </div>
+            
+              <div class="ui divider"></div>
+              <a class="item"
+                ><div
+                  role="combobox"
+                  aria-expanded="false"
+                  class="ui fluid search scrolling top right pointing dropdown RatesDropdown__StyledDropdown-wnyo3-0 gZEijP"
+                >
+                  </div>
+                </div></a
+              >
+            
+          </div>
+          <div
+            style="z-index: 999"
+            class="ui borderless top fixed ss-header xs-hidden menu"
+          >
+            <div
+              class="ui container Header__StyledContainer-sc-5yx5v0-0 dBsPEQ"
+            >
+              <div class="links">
+                <a href="/"
+                  ><div class="link item">
+                    Coins
+                  </div></a
+                ><a href="/exchanges"
+                  ><div class="link item">
+                    Exchanges
+                  </div></a
+                ><a href="/swap"><div class="link item">Swap</div></a>
+              </div>
+              <a class="header link item"
+                ><img src="/static/logos/black.svg" class="ui tiny image"
+              /></a>
+              <div class="menu links">
+                <div class="item">
+                  <div style="position: relative">
+                    <div
+                      class="ui icon input SearchInput__StyledInput-sc-1kdg18s-1 KlQHb"
+                    >
+                      <input type="text" id="search-input" /><i
+                        aria-hidden="true"
+                        class="search icon"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <i aria-hidden="true" class="setting link icon"></i>
+                </div>
+                <div class="item">
+                  <button
+                    class="ui button circular primary button cta-button"
+                    style="margin: 0px auto"
+                  >
+                    Connect Wallet
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="ui attached padded segment MarketSnapshot__StyledSegment-ii3udt-0 jbEUdJ market-snapshot xs-hidden"
+        >
+          <div
+            class="ui centered container doubling center aligned middle aligned six column grid"
+          >
+            <div class="center aligned column">
+              <div class="ui mini statistics" style="justify-content: center">
+                <div class="ui statistic">
+                  <div class="label">Market Cap</div>
+                  <div class="value">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$1.20t</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="center aligned column">
+              <div class="ui mini statistics" style="justify-content: center">
+                <div class="ui statistic">
+                  <div class="label">Exchange Vol</div>
+                  <div class="value">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$32.81b</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="center aligned column">
+              <div class="ui mini statistics" style="justify-content: center">
+                <div class="ui statistic">
+                  <div class="label">Assets</div>
+                  <div class="value">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >2,295</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="center aligned column">
+              <div class="ui mini statistics" style="justify-content: center">
+                <div class="ui statistic">
+                  <div class="label">Exchanges</div>
+                  <div class="value">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >73</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="center aligned column">
+              <div class="ui mini statistics" style="justify-content: center">
+                <div class="ui statistic">
+                  <div class="label">Markets</div>
+                  <div class="value">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >13,996</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="center aligned column">
+              <div class="ui mini statistics" style="justify-content: center">
+                <div class="ui statistic">
+                  <div class="label"><span>BTC Dom Index </span></div>
+                  <div class="value">32.2%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="ui vertical segment MarketSnapshot__StyledSegment-ii3udt-0 jbEUdJ market-snapshot mobile-only"
+          style="padding-bottom: 0px"
+        >
+          <div class="ui vertical accordion ui fluid menu">
+            <div class="item MobileView__StyledMenuItem-sc-2uoz4v-0 BefkE">
+              <div class="title">
+                <i aria-hidden="true" class="dropdown icon"></i>Market Snapshot
+              </div>
+              <div class="content">
+                <div class="item">
+                  Market Cap :
+                  <span class="ss-label"
+                    ><span
+                      class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$1.20t</span
+                    ></span
+                  >
+                </div>
+                <div class="item">
+                  Exchange Vol :
+                  <span class="ss-label"
+                    ><span
+                      class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$32.81b</span
+                    ></span
+                  >
+                </div>
+                <div class="item">
+                  Assets :
+                  <span class="ss-label"
+                    ><span
+                      class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >2,295</span
+                    ></span
+                  >
+                </div>
+                <div class="item">
+                  Exchanges :
+                  <span class="ss-label"
+                    ><span
+                      class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >73</span
+                    ></span
+                  >
+                </div>
+                <div class="item">
+                  Markets :
+                  <span class="ss-label"
+                    ><span
+                      class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >13,996</span
+                    ></span
+                  >
+                </div>
+                <div class="item">
+                  <span>BTC Dom Index </span>:
+                  <span class="ss-label">32.2%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ui attached padded segment table-segment">
+          <div class="ui container" style="margin-top: -10em">
+            <table
+              class="ui selectable single line sortable unstackable table Table-f1ur2j-0 lprLvT"
+            >
+              <thead class="">
+                <tr class="center aligned">
+                  <th
+                    colspan="1"
+                    class="center aligned ascending sorted xs-hidden"
+                  >
+                    Rank
+                  </th>
+                  <th colspan="2" class="left aligned">Name</th>
+                  <th colspan="1" class="right aligned">Price</th>
+                  <th colspan="1" class="right aligned xs-hidden">
+                    Market Cap
+                  </th>
+                  <th colspan="1" class="right aligned xs-hidden tablet-hidden">
+                    <span>VWAP (24Hr) </span>
+                  </th>
+                  <th colspan="1" class="right aligned xs-hidden tablet-hidden">
+                    Supply
+                  </th>
+                  <th colspan="1" class="right aligned xs-hidden">
+                    Volume (24Hr)
+                  </th>
+                  <th colspan="1" class="right aligned xs-hidden">
+                    Change (24Hr)
+                  </th>
+                  <th
+                    colspan="1"
+                    class="right aligned tablet-hidden desktop-hidden"
+                  >
+                    (24Hr)
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="">
+                <tr class="right aligned">
+                  <td class="center aligned xs-hidden">1</td>
+                  <td colspan="2" class="left aligned">
+                    <img
+                      src="https://assets.coincap.io/assets/icons/btc@2x.png"
+                      class="AssetLogo__ImageStyled-sc-1m18p9x-0 itlbLb ui mini right spaced middle aligned image"
+                    />
+                    <div
+                      class="ellipsis"
+                      style="display: inline-block; vertical-align: middle"
+                    >
+                      <a href="/assets/bitcoin"
+                        >Bitcoin
+                        <p style="font-size: 0.8em; opacity: 0.7">BTC</p></a
+                      >
+                    </div>
+                  </td>
+                  <td class="">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$20,092.00</span
+                    >
+                  </td>
+                  <td class="xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$384.79b</span
+                    >
+                  </td>
+                  <td class="tablet-hidden xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$19,999.59</span
+                    >
+                  </td>
+                  <td class="tablet-hidden xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >19.15m</span
+                    >
+                  </td>
+                  <td class="xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$9.06b</span
+                    >
+                  </td>
+                  <td class="">
+                    <span
+                      class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral green"
+                      >1.10%</span
+                    >
+                  </td>
+                </tr>
+                <tr class="right aligned">
+                  <td class="center aligned xs-hidden">2</td>
+                  <td colspan="2" class="left aligned">
+                    <img
+                      src="https://assets.coincap.io/assets/icons/eth@2x.png"
+                      class="AssetLogo__ImageStyled-sc-1m18p9x-0 itlbLb ui mini right spaced middle aligned image"
+                    />
+                    <div
+                      class="ellipsis"
+                      style="display: inline-block; vertical-align: middle"
+                    >
+                      <a href="/assets/ethereum"
+                        >Ethereum
+                        <p style="font-size: 0.8em; opacity: 0.7">ETH</p></a
+                      >
+                    </div>
+                  </td>
+                  <td class="">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$1,459.66</span
+                    >
+                  </td>
+                  <td class="xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$178.65b</span
+                    >
+                  </td>
+                  <td class="tablet-hidden xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$1,449.37</span
+                    >
+                  </td>
+                  <td class="tablet-hidden xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >122.42m</span
+                    >
+                  </td>
+                  <td class="xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$3.56b</span
+                    >
+                  </td>
+                  <td class="">
+                    <span
+                      class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral green"
+                      >1.79%</span
+                    >
+                  </td>
+                </tr>
+                <tr class="right aligned">
+                  <td class="center aligned xs-hidden">3</td>
+                  <td colspan="2" class="left aligned">
+                    <img
+                      src="https://assets.coincap.io/assets/icons/usdt@2x.png"
+                      class="AssetLogo__ImageStyled-sc-1m18p9x-0 itlbLb ui mini right spaced middle aligned image"
+                    />
+                    <div
+                      class="ellipsis"
+                      style="display: inline-block; vertical-align: middle"
+                    >
+                      <a href="/assets/tether"
+                        >Tether
+                        <p style="font-size: 0.8em; opacity: 0.7">USDT</p></a
+                      >
+                    </div>
+                  </td>
+                  <td class="">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$1.00</span
+                    >
+                  </td>
+                  <td class="xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$67.97b</span
+                    >
+                  </td>
+                  <td class="tablet-hidden xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$1.00</span
+                    >
+                  </td>
+                  <td class="tablet-hidden xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >67.92b</span
+                    >
+                  </td>
+                  <td class="xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$12.80b</span
+                    >
+                  </td>
+                  <td class="">
+                    <span
+                      class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral red"
+                      >-0.03%</span
+                    >
+                  </td>
+                </tr>
+                <tr class="right aligned">
+                  <td class="center aligned xs-hidden">4</td>
+                  <td colspan="2" class="left aligned">
+                    <img
+                      src="https://assets.coincap.io/assets/icons/usdc@2x.png"
+                      class="AssetLogo__ImageStyled-sc-1m18p9x-0 itlbLb ui mini right spaced middle aligned image"
+                    />
+                    <div
+                      class="ellipsis"
+                      style="display: inline-block; vertical-align: middle"
+                    >
+                      <a href="/assets/usd-coin"
+                        >USD Coin
+                        <p style="font-size: 0.8em; opacity: 0.7">USDC</p></a
+                      >
+                    </div>
+                  </td>
+                  <td class="">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$1.00</span
+                    >
+                  </td>
+                  <td class="xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$50.26b</span
+                    >
+                  </td>
+                  <td class="tablet-hidden xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$1.00</span
+                    >
+                  </td>
+                  <td class="tablet-hidden xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >50.21b</span
+                    >
+                  </td>
+                  <td class="xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$908.63m</span
+                    >
+                  </td>
+                  <td class="">
+                    <span
+                      class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral green"
+                      >0.02%</span
+                    >
+                  </td>
+                </tr>
+                <tr class="right aligned">
+                  <td class="center aligned xs-hidden">5</td>
+                  <td colspan="2" class="left aligned">
+                    <img
+                      src="https://assets.coincap.io/assets/icons/bnb@2x.png"
+                      class="AssetLogo__ImageStyled-sc-1m18p9x-0 itlbLb ui mini right spaced middle aligned image"
+                    />
+                    <div
+                      class="ellipsis"
+                      style="display: inline-block; vertical-align: middle"
+                    >
+                      <a href="/assets/binance-coin"
+                        >BNB
+                        <p style="font-size: 0.8em; opacity: 0.7">BNB</p></a
+                      >
+                    </div>
+                  </td>
+                  <td class="">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$278.26</span
+                    >
+                  </td>
+                  <td class="xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$46.41b</span
+                    >
+                  </td>
+                  <td class="tablet-hidden xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$277.79</span
+                    >
+                  </td>
+                  <td class="tablet-hidden xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >166.80m</span
+                    >
+                  </td>
+                  <td class="xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$147.11m</span
+                    >
+                  </td>
+                  <td class="">
+                    <span
+                      class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral green"
+                      >0.43%</span
+                    >
+                  </td>
+                </tr>
+                <tr class="right aligned">
+                  <td class="center aligned xs-hidden">6</td>
+                  <td colspan="2" class="left aligned">
+                    <img
+                      src="https://assets.coincap.io/assets/icons/busd@2x.png"
+                      class="AssetLogo__ImageStyled-sc-1m18p9x-0 itlbLb ui mini right spaced middle aligned image"
+                    />
+                    <div
+                      class="ellipsis"
+                      style="display: inline-block; vertical-align: middle"
+                    >
+                      <a href="/assets/binance-usd"
+                        >Binance USD
+                        <p style="font-size: 0.8em; opacity: 0.7">BUSD</p></a
+                      >
+                    </div>
+                  </td>
+                  <td class="">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$1.00</span
+                    >
+                  </td>
+                  <td class="xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$20.53b</span
+                    >
+                  </td>
+                  <td class="tablet-hidden xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$1.00</span
+                    >
+                  </td>
+                  <td class="tablet-hidden xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >20.52b</span
+                    >
+                  </td>
+                  <td class="xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$564.32m</span
+                    >
+                  </td>
+                  <td class="">
+                    <span
+                      class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral red"
+                      >-0.04%</span
+                    >
+                  </td>
+                </tr>
+                <tr class="right aligned">
+                  <td class="center aligned xs-hidden">7</td>
+                  <td colspan="2" class="left aligned">
+                    <img
+                      src="https://assets.coincap.io/assets/icons/xrp@2x.png"
+                      class="AssetLogo__ImageStyled-sc-1m18p9x-0 itlbLb ui mini right spaced middle aligned image"
+                    />
+                    <div
+                      class="ellipsis"
+                      style="display: inline-block; vertical-align: middle"
+                    >
+                      <a href="/assets/xrp"
+                        >XRP
+                        <p style="font-size: 0.8em; opacity: 0.7">XRP</p></a
+                      >
+                    </div>
+                  </td>
+                  <td class="">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$0.37</span
+                    >
+                  </td>
+                  <td class="xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$16.81b</span
+                    >
+                  </td>
+                  <td class="tablet-hidden xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$0.36</span
+                    >
+                  </td>
+                  <td class="tablet-hidden xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >45.40b</span
+                    >
+                  </td>
+                  <td class="xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$577.20m</span
+                    >
+                  </td>
+                  <td class="">
+                    <span
+                      class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral green"
+                      >5.76%</span
+                    >
+                  </td>
+                </tr>
+                <tr class="right aligned">
+                  <td class="center aligned xs-hidden">8</td>
+                  <td colspan="2" class="left aligned">
+                    <img
+                      src="https://assets.coincap.io/assets/icons/ada@2x.png"
+                      class="AssetLogo__ImageStyled-sc-1m18p9x-0 itlbLb ui mini right spaced middle aligned image"
+                    />
+                    <div
+                      class="ellipsis"
+                      style="display: inline-block; vertical-align: middle"
+                    >
+                      <a href="/assets/cardano"
+                        >Cardano
+                        <p style="font-size: 0.8em; opacity: 0.7">ADA</p></a
+                      >
+                    </div>
+                  </td>
+                  <td class="">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$0.48</span
+                    >
+                  </td>
+                  <td class="xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$16.56b</span
+                    >
+                  </td>
+                  <td class="tablet-hidden xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$0.48</span
+                    >
+                  </td>
+                  <td class="tablet-hidden xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >34.18b</span
+                    >
+                  </td>
+                  <td class="xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$145.36m</span
+                    >
+                  </td>
+                  <td class="">
+                    <span
+                      class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral green"
+                      >1.93%</span
+                    >
+                  </td>
+                </tr>
+                <tr class="right aligned">
+                  <td class="center aligned xs-hidden">9</td>
+                  <td colspan="2" class="left aligned">
+                    <img
+                      src="https://assets.coincap.io/assets/icons/sol@2x.png"
+                      class="AssetLogo__ImageStyled-sc-1m18p9x-0 itlbLb ui mini right spaced middle aligned image"
+                    />
+                    <div
+                      class="ellipsis"
+                      style="display: inline-block; vertical-align: middle"
+                    >
+                      <a href="/assets/solana"
+                        >Solana
+                        <p style="font-size: 0.8em; opacity: 0.7">SOL</p></a
+                      >
+                    </div>
+                  </td>
+                  <td class="">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$33.79</span
+                    >
+                  </td>
+                  <td class="xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$11.96b</span
+                    >
+                  </td>
+                  <td class="tablet-hidden xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$33.31</span
+                    >
+                  </td>
+                  <td class="tablet-hidden xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >353.98m</span
+                    >
+                  </td>
+                  <td class="xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$78.68m</span
+                    >
+                  </td>
+                  <td class="">
+                    <span
+                      class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral green"
+                      >3.32%</span
+                    >
+                  </td>
+                </tr>
+                <tr class="right aligned">
+                  <td class="center aligned xs-hidden">10</td>
+                  <td colspan="2" class="left aligned">
+                    <img
+                      src="https://assets.coincap.io/assets/icons/luna@2x.png"
+                      class="AssetLogo__ImageStyled-sc-1m18p9x-0 itlbLb ui mini right spaced middle aligned image"
+                    />
+                    <div
+                      class="ellipsis"
+                      style="display: inline-block; vertical-align: middle"
+                    >
+                      <a href="/assets/terra-luna"
+                        >Terra
+                        <p style="font-size: 0.8em; opacity: 0.7">LUNA</p></a
+                      >
+                    </div>
+                  </td>
+                  <td class="">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$3.01</span
+                    >
+                  </td>
+                  <td class="xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$10.41b</span
+                    >
+                  </td>
+                  <td class="tablet-hidden xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$3.11</span
+                    >
+                  </td>
+                  <td class="tablet-hidden xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >3.45b</span
+                    >
+                  </td>
+                  <td class="xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$92.55m</span
+                    >
+                  </td>
+                  <td class="">
+                    <span
+                      class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral green"
+                      >0.11%</span
+                    >
+                  </td>
+                </tr>
+                <tr class="right aligned">
+                  <td class="center aligned xs-hidden">11</td>
+                  <td colspan="2" class="left aligned">
+                    <img
+                      src="https://assets.coincap.io/assets/icons/doge@2x.png"
+                      class="AssetLogo__ImageStyled-sc-1m18p9x-0 itlbLb ui mini right spaced middle aligned image"
+                    />
+                    <div
+                      class="ellipsis"
+                      style="display: inline-block; vertical-align: middle"
+                    >
+                      <a href="/assets/dogecoin"
+                        >Dogecoin
+                        <p style="font-size: 0.8em; opacity: 0.7">DOGE</p></a
+                      >
+                    </div>
+                  </td>
+                  <td class="">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$0.061</span
+                    >
+                  </td>
+                  <td class="xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$8.18b</span
+                    >
+                  </td>
+                  <td class="tablet-hidden xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$0.061</span
+                    >
+                  </td>
+                  <td class="tablet-hidden xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >132.67b</span
+                    >
+                  </td>
+                  <td class="xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$89.62m</span
+                    >
+                  </td>
+                  <td class="">
+                    <span
+                      class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral green"
+                      >1.95%</span
+                    >
+                  </td>
+                </tr>
+                <tr class="right aligned">
+                  <td class="center aligned xs-hidden">12</td>
+                  <td colspan="2" class="left aligned">
+                    <img
+                      src="https://assets.coincap.io/assets/icons/dot@2x.png"
+                      class="AssetLogo__ImageStyled-sc-1m18p9x-0 itlbLb ui mini right spaced middle aligned image"
+                    />
+                    <div
+                      class="ellipsis"
+                      style="display: inline-block; vertical-align: middle"
+                    >
+                      <a
+                        >Polkadot
+                        <p style="font-size: 0.8em; opacity: 0.7">DOT</p></a
+                      >
+                    </div>
+                  </td>
+                  <td class="">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$7.04</span
+                    >
+                  </td>
+                  <td class="xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$8.11b</span
+                    >
+                  </td>
+                  <td class="tablet-hidden xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$7.04</span
+                    >
+                  </td>
+                  <td class="tablet-hidden xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >1.15b</span
+                    >
+                  </td>
+                  <td class="xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$88.87m</span
+                    >
+                  </td>
+                  <td class="">
+                    <span
+                      class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral green"
+                      >0.55%</span
+                    >
+                  </td>
+                </tr>
+                <tr class="right aligned">
+                  <td class="center aligned xs-hidden">13</td>
+                  <td colspan="2" class="left aligned">
+                    <img
+                      src="https://assets.coincap.io/assets/icons/matic@2x.png"
+                      class="AssetLogo__ImageStyled-sc-1m18p9x-0 itlbLb ui mini right spaced middle aligned image"
+                    />
+                    <div
+                      class="ellipsis"
+                      style="display: inline-block; vertical-align: middle"
+                    >
+                      <a
+                        >Polygon
+                        <p style="font-size: 0.8em; opacity: 0.7">MATIC</p></a
+                      >
+                    </div>
+                  </td>
+                  <td class="">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$0.82</span
+                    >
+                  </td>
+                  <td class="xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$7.22b</span
+                    >
+                  </td>
+                  <td class="tablet-hidden xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$0.82</span
+                    >
+                  </td>
+                  <td class="tablet-hidden xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >8.73b</span
+                    >
+                  </td>
+                  <td class="xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$81.95m</span
+                    >
+                  </td>
+                  <td class="">
+                    <span
+                      class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral green"
+                      >1.68%</span
+                    >
+                  </td>
+                </tr>
+                <tr class="right aligned">
+                  <td class="center aligned xs-hidden">14</td>
+                  <td colspan="2" class="left aligned">
+                    <img
+                      src="https://assets.coincap.io/assets/icons/dai@2x.png"
+                      class="AssetLogo__ImageStyled-sc-1m18p9x-0 itlbLb ui mini right spaced middle aligned image"
+                    />
+                    <div
+                      class="ellipsis"
+                      style="display: inline-block; vertical-align: middle"
+                    >
+                      <a
+                        >Multi Collateral DAI
+                        <p style="font-size: 0.8em; opacity: 0.7">DAI</p></a
+                      >
+                    </div>
+                  </td>
+                  <td class="">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$1.00</span
+                    >
+                  </td>
+                  <td class="xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$6.90b</span
+                    >
+                  </td>
+                  <td class="tablet-hidden xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$1.00</span
+                    >
+                  </td>
+                  <td class="tablet-hidden xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >6.89b</span
+                    >
+                  </td>
+                  <td class="xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$26.42m</span
+                    >
+                  </td>
+                  <td class="">
+                    <span
+                      class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral green"
+                      >0.05%</span
+                    >
+                  </td>
+                </tr>
+                <tr class="right aligned">
+                  <td class="center aligned xs-hidden">15</td>
+                  <td colspan="2" class="left aligned">
+                    <img
+                      src="https://assets.coincap.io/assets/icons/shib@2x.png"
+                      class="AssetLogo__ImageStyled-sc-1m18p9x-0 itlbLb ui mini right spaced middle aligned image"
+                    />
+                    <div
+                      class="ellipsis"
+                      style="display: inline-block; vertical-align: middle"
+                    >
+                      <a
+                        >Shiba Inu
+                        <p style="font-size: 0.8em; opacity: 0.7">SHIB</p></a
+                      >
+                    </div>
+                  </td>
+                  <td class="">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$0.000011</span
+                    >
+                  </td>
+                  <td class="xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$6.56b</span
+                    >
+                  </td>
+                  <td class="tablet-hidden xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$0.000011</span
+                    >
+                  </td>
+                  <td class="tablet-hidden xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >549.06t</span
+                    >
+                  </td>
+                  <td class="xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$84.67m</span
+                    >
+                  </td>
+                  <td class="">
+                    <span
+                      class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral green"
+                      >2.27%</span
+                    >
+                  </td>
+                </tr>
+                <tr class="right aligned">
+                  <td class="center aligned xs-hidden">16</td>
+                  <td colspan="2" class="left aligned">
+                    <img
+                      src="https://assets.coincap.io/assets/icons/trx@2x.png"
+                      class="AssetLogo__ImageStyled-sc-1m18p9x-0 itlbLb ui mini right spaced middle aligned image"
+                    />
+                    <div
+                      class="ellipsis"
+                      style="display: inline-block; vertical-align: middle"
+                    >
+                      <a
+                        >TRON
+                        <p style="font-size: 0.8em; opacity: 0.7">TRX</p></a
+                      >
+                    </div>
+                  </td>
+                  <td class="">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$0.062</span
+                    >
+                  </td>
+                  <td class="xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$5.75b</span
+                    >
+                  </td>
+                  <td class="tablet-hidden xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$0.061</span
+                    >
+                  </td>
+                  <td class="tablet-hidden xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >92.36b</span
+                    >
+                  </td>
+                  <td class="xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$59.86m</span
+                    >
+                  </td>
+                  <td class="">
+                    <span
+                      class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral green"
+                      >1.25%</span
+                    >
+                  </td>
+                </tr>
+                <tr class="right aligned">
+                  <td class="center aligned xs-hidden">17</td>
+                  <td colspan="2" class="left aligned">
+                    <img
+                      src="https://assets.coincap.io/assets/icons/avax@2x.png"
+                      class="AssetLogo__ImageStyled-sc-1m18p9x-0 itlbLb ui mini right spaced middle aligned image"
+                    />
+                    <div
+                      class="ellipsis"
+                      style="display: inline-block; vertical-align: middle"
+                    >
+                      <a
+                        >Avalanche
+                        <p style="font-size: 0.8em; opacity: 0.7">AVAX</p></a
+                      >
+                    </div>
+                  </td>
+                  <td class="">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$18.58</span
+                    >
+                  </td>
+                  <td class="xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$5.49b</span
+                    >
+                  </td>
+                  <td class="tablet-hidden xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$18.47</span
+                    >
+                  </td>
+                  <td class="tablet-hidden xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >295.73m</span
+                    >
+                  </td>
+                  <td class="xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$110.60m</span
+                    >
+                  </td>
+                  <td class="">
+                    <span
+                      class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral green"
+                      >2.21%</span
+                    >
+                  </td>
+                </tr>
+                <tr class="right aligned">
+                  <td class="center aligned xs-hidden">18</td>
+                  <td colspan="2" class="left aligned">
+                    <img
+                      src="https://assets.coincap.io/assets/icons/wbtc@2x.png"
+                      class="AssetLogo__ImageStyled-sc-1m18p9x-0 itlbLb ui mini right spaced middle aligned image"
+                    />
+                    <div
+                      class="ellipsis"
+                      style="display: inline-block; vertical-align: middle"
+                    >
+                      <a
+                        >Wrapped Bitcoin
+                        <p style="font-size: 0.8em; opacity: 0.7">WBTC</p></a
+                      >
+                    </div>
+                  </td>
+                  <td class="">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$20,085.97</span
+                    >
+                  </td>
+                  <td class="xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$5.00b</span
+                    >
+                  </td>
+                  <td class="tablet-hidden xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$19,975.17</span
+                    >
+                  </td>
+                  <td class="tablet-hidden xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >248.86k</span
+                    >
+                  </td>
+                  <td class="xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$63.95m</span
+                    >
+                  </td>
+                  <td class="">
+                    <span
+                      class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral green"
+                      >1.04%</span
+                    >
+                  </td>
+                </tr>
+                <tr class="right aligned">
+                  <td class="center aligned xs-hidden">19</td>
+                  <td colspan="2" class="left aligned">
+                    <img
+                      src="https://assets.coincap.io/assets/icons/leo@2x.png"
+                      class="AssetLogo__ImageStyled-sc-1m18p9x-0 itlbLb ui mini right spaced middle aligned image"
+                    />
+                    <div
+                      class="ellipsis"
+                      style="display: inline-block; vertical-align: middle"
+                    >
+                      <a
+                        >UNUS SED LEO
+                        <p style="font-size: 0.8em; opacity: 0.7">LEO</p></a
+                      >
+                    </div>
+                  </td>
+                  <td class="">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$4.96</span
+                    >
+                  </td>
+                  <td class="xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$4.73b</span
+                    >
+                  </td>
+                  <td class="tablet-hidden xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$4.97</span
+                    >
+                  </td>
+                  <td class="tablet-hidden xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >953.95m</span
+                    >
+                  </td>
+                  <td class="xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$1.82m</span
+                    >
+                  </td>
+                  <td class="">
+                    <span
+                      class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral red"
+                      >-0.01%</span
+                    >
+                  </td>
+                </tr>
+                <tr class="right aligned">
+                  <td class="center aligned xs-hidden">20</td>
+                  <td colspan="2" class="left aligned">
+                    <img
+                      src="https://assets.coincap.io/assets/icons/etc@2x.png"
+                      class="AssetLogo__ImageStyled-sc-1m18p9x-0 itlbLb ui mini right spaced middle aligned image"
+                    />
+                    <div
+                      class="ellipsis"
+                      style="display: inline-block; vertical-align: middle"
+                    >
+                      <a
+                        >Ethereum Classic
+                        <p style="font-size: 0.8em; opacity: 0.7">ETC</p></a
+                      >
+                    </div>
+                  </td>
+                  <td class="">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$34.35</span
+                    >
+                  </td>
+                  <td class="xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$4.70b</span
+                    >
+                  </td>
+                  <td class="tablet-hidden xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$34.14</span
+                    >
+                  </td>
+                  <td class="tablet-hidden xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >136.92m</span
+                    >
+                  </td>
+                  <td class="xs-hidden">
+                    <span class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral"
+                      >$124.09m</span
+                    >
+                  </td>
+                  <td class="">
+                    <span
+                      class="Numeral__Container-sc-18j7kzw-0 jbOTGs numeral green"
+                      >0.95%</span
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="ui hidden divider"></div>
+            <button class="ui circular primary button cta-button">
+              View More
+            </button>
+          </div>
+        </div>
+        <footer class="Footer__Container-sc-66g441-0 XnTWK footer">
+          <div class="ui attached very padded segment">
+            <div class="ui container doubling four column grid">
+              <div class="column">
+                <div class="ui tiny header">COINCAP.IO</div>
+                <div role="list" class="ui list">
+                  <div role="listitem" class="item">
+                    <a>Methodology</a>
+                  </div>
+                  <div role="listitem" class="item">
+                    <a>Support</a>
+                  </div>
+                  <div role="listitem" class="item">
+                    <a>Our API</a>
+                  </div>
+                  <div role="listitem" class="item">
+                    <a>Rate Comparison</a>
+                  </div>
+                  <div role="listitem" class="item">
+                    <a>Careers</a>
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="ui tiny header">LEGALS</div>
+                <div role="list" class="ui list">
+                  <div role="listitem" class="item">
+                    <a>Terms of Service</a>
+                  </div>
+                  <div role="listitem" class="item">
+                    <a>Privacy Policy</a>
+                  </div>
+                </div>
+                <div class="ui tiny header">DISCLAIMER</div>
+                <div role="list" class="ui list">
+                  <div role="listitem" class="item">
+                    <span
+                      >Neither ShapeShift AG nor CoinCap are in any way
+                      associated with CoinMarketCap, LLC or any of its goods and
+                      services.</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="ui tiny header">FOLLOW US</div>
+                <a><i aria-hidden="true" class="twitter large link icon"></i></a
+                ><a
+                  ><i aria-hidden="true" class="facebook large link icon"></i
+                ></a>
+              </div>
+              <div class="column">
+                <div class="ui tiny header">COINCAP APP AVAILABLE ON</div>
+                <div role="list" class="ui list">
+                  <div role="listitem" class="item">
+                    <a target="_blank"
+                      ><img
+                        src="images/googleplay.webp"
+                        class="ui image"
+                    /></a>
+                  </div>
+                  <div role="listitem" class="item">
+                    <a target="_blank"
+                      ><img
+                        src="images/appstore.jpg"
+                        class="ui image"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </main>
+    </div>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+</body>
 </html>
